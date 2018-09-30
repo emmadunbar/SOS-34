@@ -5,14 +5,41 @@ place="ocean"
 while True:
     ch=input("You are in the " + place + ", where to next? ")
     if place=="ocean":
-        if ch==1:
-            input("You remain in the ocean, where to next? ")
-            place=="ocean"
-        if ch==2:
-            input("You evaporate into the clouds, where to next? ")
-            place=="clouds"
-        if ch==3:
-            input("You remain in the ocean, where to next? ") 
-            place=="ocean"
+        if ch=="1":
+            place="ocean"
+            print("You remain in the " + place + "")
+        if ch=="2":
+            place="clouds"
+            print("You evaporate into the " + place + "")
+        if ch=="3":
+            place="ocean"
+            print("You remain in the " + place + "")
         if ch=="q":
+            print("Goodbye!")
+            break
+    if place=="clouds":
+        if ch=="1":
+            place="mountains"
+            print("You precipitate onto the " + place + "")
+        if ch=="2":
+            place="clouds"
+            print("You remain in the " + place + "")
+        if ch=="3":
+            place="ground"
+            print("You precipitate onto the " + place + "")
+        if ch=="q":
+            print("Goodbye!")
+            break
+    if place=="ground":
+        if ch=="1":
+            place="lake"
+            print("You run down into the " + place + "")
+        if ch=="2":
+            place="plants"
+            print("You are absorbed into the " + place + "")
+        if ch=="3":
+            place="aquifer"
+            print("You infiltrate into the " + place + "")
+        if ch=="q":
+            print("Goodbye!")
             break
