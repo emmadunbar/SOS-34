@@ -1,1 +1,18 @@
 #Water Cycle Computer Simulation
+
+print("enter 1, 2, or 3 to progress, or q to quit")
+place="ocean"
+while True:
+    ch=input("You are in the " + place + ", where to next? ")
+    if place=="ocean":
+        if ch==1:
+            input("You remain in the ocean, where to next? ")
+            place=="ocean"
+        if ch==2:
+            input("You evaporate into the clouds, where to next? ")
+            place=="clouds"
+        if ch==3:
+            input("You remain in the ocean, where to next? ") 
+            place=="ocean"
+        if ch=="q":
+            break
