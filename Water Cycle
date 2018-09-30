@@ -8,12 +8,15 @@ while True:
         if ch=="1":
             place="ocean"
             print("You remain in the " + place + "")
+            ch=0
         if ch=="2":
             place="clouds"
             print("You evaporate into the " + place + "")
+            ch=0
         if ch=="3":
             place="ocean"
             print("You remain in the " + place + "")
+            ch=0
         if ch=="q":
             print("Goodbye!")
             break
@@ -21,12 +24,15 @@ while True:
         if ch=="1":
             place="mountains"
             print("You precipitate onto the " + place + "")
+            ch=0
         if ch=="2":
             place="clouds"
             print("You remain in the " + place + "")
+            ch=0
         if ch=="3":
             place="ground"
             print("You precipitate onto the " + place + "")
+            ch=0
         if ch=="q":
             print("Goodbye!")
             break
@@ -34,12 +40,81 @@ while True:
         if ch=="1":
             place="lake"
             print("You run down into the " + place + "")
+            ch=0
         if ch=="2":
             place="plants"
             print("You are absorbed into the " + place + "")
+            ch=0
         if ch=="3":
             place="aquifer"
             print("You infiltrate into the " + place + "")
+            ch=0
         if ch=="q":
             print("Goodbye!")
             break
+    if place=="lake":
+        if ch=="1":
+            place="lake"
+            print("You remain down in the " + place + "")
+            ch=0
+        if ch=="2":
+            place="ocean"
+            print("You run off into the " + place + "")
+            ch=0
+        if ch=="3":
+            place="clouds"
+            print("You evaporate into the " + place + "")
+            ch=0
+        if ch=="q":
+            print("Goodbye!")
+            break
+    if place=="mountains":
+        if ch=="1":
+            place="lake"
+            print("You run down into the " + place + "")
+            ch=0
+        if ch=="2":
+            place="clouds"
+            print("You are in the " + place + " through sublimation")
+            ch=0
+        if ch=="3":
+            place="mounatins"
+            print("You remain in the " + place + "")
+            ch=0
+        if ch=="q":
+            print("Goodbye!")
+            break
+    if place=="plants":
+        if ch=="1":
+            place="clouds"
+            print("You are in the " + place + " through transpiration")
+            ch=0
+        if ch=="2":
+            place="plants"
+            print("You remain in the " + place + "")
+            ch=0
+        if ch=="3":
+            place="clouds"
+            print("You are in the " + place + " through transpiration")
+            ch=0
+        if ch=="q":
+            print("Goodbye!")
+            break
+    if place=="aquifer":
+        if ch=="1":
+            place="aquifer"
+            print("You remain in the " + place + "")
+            ch=0
+        if ch=="2":
+            place="lake"
+            print("You bubble up to the surface through a spring and run into the " + place + "")
+            ch=0
+        if ch=="3":
+            place="aquifer"
+            print("You remain in the " + place + "")
+            ch=0
+        if ch=="q":
+            print("Goodbye!")
+            break
+    if ch=="4":
+        break
