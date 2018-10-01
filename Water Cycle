@@ -78,7 +78,7 @@ while True:
             print("You are in the " + place + " through sublimation")
             ch=0
         if ch=="3":
-            place="mounatins"
+            place="mountains"
             print("You remain in the " + place + "")
             ch=0
         if ch=="q":
